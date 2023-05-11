@@ -52,7 +52,7 @@ const oneCountry = country => {
     clearEls();
 
     const countries = country.map(countryName => {
-        return `<h2 style="font-size: 40px"><img src="${countryName.flags.svg}" alt="${countryName.flags.alt} width="30" height="30"> ${countryName.name.official}</h2>
+        return `<h2 style="font-size: 40px"><img src="${countryName.flags.svg}" alt="${countryName.flags.alt} width="60" height="60"> ${countryName.name.official}</h2>
         <p><span style="font-weight: bold">Capital:</span> ${countryName.capital}</p>
         <p><span style="font-weight: bold">Population:</span> ${countryName.population.toLocaleString()}</p>
         <p><span style="font-weight: bold">Languages:</span> ${Object.values(
