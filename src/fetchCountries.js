@@ -1,6 +1,6 @@
 
 import Notiflix from 'notiflix';
-const listEl = document.querySelector('country-list');
+const listEl = document.querySelector('.country-list');
 const divEl = document.querySelector('.country-info');
 const API_URL = "https://restcountries.com/v3.1/name";
 
@@ -22,8 +22,10 @@ export const fetchCountries = (name) => {
                 Notiflix.Notify.info('Too many matches found. Please enter a more specific name.')
             }
             else if (country.length >= 2 && country.length <= 10) {
+                
                 fewCountries(country);
             } else if (country.length = 1) {
+            
                 oneCountry(country);
             }
         })
